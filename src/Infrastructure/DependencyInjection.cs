@@ -25,6 +25,7 @@ public static class DependencyInjection
         services.AddScoped<ISaveChangesInterceptor, AuditableEntityInterceptor>();
         services.AddScoped<ISaveChangesInterceptor, DispatchDomainEventsInterceptor>();
 
+        // Configure DI services with an HttpClient for accessing a superhero API.
         services
         .AddHttpClient<ISuperHeroService, SuperHeroService>(client =>
         {
