@@ -6,10 +6,10 @@
     "version": "1.0.0"
   },
   "paths": {
-    "/api/SuperHero/favorites": {
+    "/api/SuperHeros/favorites": {
       "get": {
         "tags": [
-          "SuperHero"
+          "SuperHeros"
         ],
         "operationId": "GetFavorites",
         "responses": {
@@ -35,7 +35,7 @@
       },
       "post": {
         "tags": [
-          "SuperHero"
+          "SuperHeros"
         ],
         "operationId": "AddFavorite",
         "parameters": [
@@ -70,10 +70,10 @@
         ]
       }
     },
-    "/api/SuperHero/search": {
+    "/api/SuperHeros/search": {
       "get": {
         "tags": [
-          "SuperHero"
+          "SuperHeros"
         ],
         "operationId": "SearchSuperHeroByName",
         "parameters": [
@@ -560,7 +560,7 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "fullName": {
+          "full-Name": {
             "type": "string",
             "nullable": true
           },

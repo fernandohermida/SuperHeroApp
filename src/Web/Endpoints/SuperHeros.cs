@@ -4,7 +4,7 @@ using SuperHeroApp.Application.SuperHeroFeatures.Queries.SearchSuperHeroByName;
 
 namespace SuperHeroApp.Web.Endpoints;
 
-public class SuperHero : EndpointGroupBase
+public class SuperHeros : EndpointGroupBase
 {
     public override void Map(WebApplication app)
     {

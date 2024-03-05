@@ -1,4 +1,6 @@
-﻿namespace SuperHeroApp.Application.SuperHeroFeatures.Queries.SearchSuperHeroByName;
+﻿using System.Text.Json.Serialization;
+
+namespace SuperHeroApp.Application.SuperHeroFeatures.Queries.SearchSuperHeroByName;
 
 public class SuperHeroResponse
 {
@@ -31,10 +33,15 @@ public class PowerstatsDTO
 
 public class BiographyDTO
 {
+    [JsonPropertyName("full-Name")]
     public string? FullName { get; set; }
+    [JsonPropertyName("alterEgos")]
     public string? AlterEgos { get; set; }
     public List<string>? Aliases { get; set; }
+
+    [JsonPropertyName("place-of-birth")]
     public string? PlaceOfBirth { get; set; }
+    [JsonPropertyName("first-appearance")]
     public string? FirstAppearance { get; set; }
     public string? Publisher { get; set; }
     public string? Alignment { get; set; }
@@ -46,7 +53,11 @@ public class AppearanceDTO
     public string? Race { get; set; }
     public List<string>? Height { get; set; }
     public List<string>? Weight { get; set; }
+
+    [JsonPropertyName("eye-color")]
     public string? EyeColor { get; set; }
+
+    [JsonPropertyName("hair-color")]
     public string? HairColor { get; set; }
 }
 
@@ -58,6 +69,7 @@ public class WorkDTO
 
 public class ConnectionsDTO
 {
+    [JsonPropertyName("group-affiliation")]
     public string? GroupAffiliation { get; set; }
     public string? Relatives { get; set; }
 }
