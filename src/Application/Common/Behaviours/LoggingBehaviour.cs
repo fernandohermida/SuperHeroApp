@@ -1,6 +1,6 @@
-﻿using SuperHeroApp.Application.Common.Interfaces;
-using MediatR.Pipeline;
+﻿using MediatR.Pipeline;
 using Microsoft.Extensions.Logging;
+using SuperHeroApp.Application.Common.Interfaces;
 
 namespace SuperHeroApp.Application.Common.Behaviours;
 

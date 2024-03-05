@@ -1,9 +1,8 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using AutoMapper;
-using SuperHeroApp.Application.Common.Interfaces;
-using SuperHeroApp.Application.Common.Models;
 using NUnit.Framework;
+using SuperHeroApp.Application.Common.Interfaces;
 
 namespace SuperHeroApp.Application.UnitTests.Common.Mappings;
 
@@ -14,7 +13,7 @@ public class MappingTests
 
     public MappingTests()
     {
-        _configuration = new MapperConfiguration(config => 
+        _configuration = new MapperConfiguration(config =>
             config.AddMaps(Assembly.GetAssembly(typeof(IApplicationDbContext))));
 
         _mapper = _configuration.CreateMapper();

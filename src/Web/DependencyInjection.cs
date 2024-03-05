@@ -1,10 +1,10 @@
 ﻿using Azure.Identity;
-using SuperHeroApp.Application.Common.Interfaces;
-using SuperHeroApp.Infrastructure.Data;
-using SuperHeroApp.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 using NSwag;
 using NSwag.Generation.Processors.Security;
+using SuperHeroApp.Application.Common.Interfaces;
+using SuperHeroApp.Infrastructure.Data;
+using SuperHeroApp.Web.Services;
 
 namespace Microsoft.Extensions.DependencyInjection;
 

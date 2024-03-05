@@ -1,12 +1,10 @@
-﻿using System.Runtime.InteropServices;
-using SuperHeroApp.Domain.Constants;
-using SuperHeroApp.Domain.Entities;
-using SuperHeroApp.Infrastructure.Identity;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using SuperHeroApp.Domain.Constants;
+using SuperHeroApp.Infrastructure.Identity;
 
 namespace SuperHeroApp.Infrastructure.Data;
 
@@ -83,12 +81,12 @@ public class ApplicationDbContextInitialiser
             await _userManager.CreateAsync(administrator, "Administrator1!");
             if (!string.IsNullOrWhiteSpace(administratorRole.Name))
             {
-                await _userManager.AddToRolesAsync(administrator, new [] { administratorRole.Name });
+                await _userManager.AddToRolesAsync(administrator, new[] { administratorRole.Name });
             }
         }
 
         // Default data
         // Seed, if necessary
-     
+
     }
 }

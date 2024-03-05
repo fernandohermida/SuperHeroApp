@@ -1,10 +1,10 @@
-﻿using SuperHeroApp.Domain.Constants;
-using SuperHeroApp.Infrastructure.Data;
-using SuperHeroApp.Infrastructure.Identity;
-using MediatR;
+﻿using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using SuperHeroApp.Domain.Constants;
+using SuperHeroApp.Infrastructure.Data;
+using SuperHeroApp.Infrastructure.Identity;
 
 namespace SuperHeroApp.Application.FunctionalTests;
 
@@ -99,7 +99,7 @@ public partial class Testing
         {
             await _database.ResetAsync();
         }
-        catch (Exception) 
+        catch (Exception)
         {
         }
 

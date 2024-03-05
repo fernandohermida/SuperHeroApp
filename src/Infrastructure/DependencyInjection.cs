@@ -1,10 +1,8 @@
-﻿using System.Net;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Http.Resilience;
-using Polly;
 using SuperHeroApp.Application.Common.Interfaces;
 using SuperHeroApp.Domain.Constants;
 using SuperHeroApp.Infrastructure.Data;

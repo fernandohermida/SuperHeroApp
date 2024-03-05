@@ -1,6 +1,6 @@
-﻿using SuperHeroApp.Application.Common.Exceptions;
-using Microsoft.AspNetCore.Diagnostics;
+﻿using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using SuperHeroApp.Application.Common.Exceptions;
 
 namespace SuperHeroApp.Web.Infrastructure;
 

@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
-using SuperHeroApp.Application.Common.Interfaces;
 using Microsoft.Extensions.Logging;
+using SuperHeroApp.Application.Common.Interfaces;
 
 namespace SuperHeroApp.Application.Common.Behaviours;
 

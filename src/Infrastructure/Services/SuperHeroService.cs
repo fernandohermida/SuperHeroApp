@@ -13,14 +13,15 @@ public class SuperHeroService : ISuperHeroService
     }
 
     public async Task<SuperHeroResponse?> SearchByNameAsync(string name)
-    {        
+    {
         var response = await _httpClient.GetAsync($"search/{name}");
 
         if (!response.IsSuccessStatusCode) return null;
 
-        var responseBody = await response. Content.ReadFromJsonAsync<SuperHeroResponse>();
+        var responseBody = await response.Content.ReadFromJsonAsync<SuperHeroResponse>();
 
-        return new SuperHeroResponse { 
+        return new SuperHeroResponse
+        {
             Response = responseBody!.Response,
             Results = responseBody!.Results,
             ResultsFor = responseBody!.ResultsFor

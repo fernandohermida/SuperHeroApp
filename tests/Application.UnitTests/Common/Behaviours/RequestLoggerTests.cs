@@ -1,8 +1,8 @@
-﻿using SuperHeroApp.Application.Common.Behaviours;
-using SuperHeroApp.Application.Common.Interfaces;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using Moq;
 using NUnit.Framework;
+using SuperHeroApp.Application.Common.Behaviours;
+using SuperHeroApp.Application.Common.Interfaces;
 using SuperHeroApp.Application.SuperHeroFeatures.Commands.AddFavoriteSuperhero;
 
 namespace SuperHeroApp.Application.UnitTests.Common.Behaviours;
@@ -28,7 +28,7 @@ public class RequestLoggerTests
 
         var requestLogger = new LoggingBehaviour<AddFavoriteSuperheroCommand>(_logger.Object, _user.Object, _identityService.Object);
 
-        await requestLogger.Process(new AddFavoriteSuperheroCommand { SuperheroId = 1}, new CancellationToken());
+        await requestLogger.Process(new AddFavoriteSuperheroCommand { SuperheroId = 1 }, new CancellationToken());
 
         _identityService.Verify(i => i.GetUserNameAsync(It.IsAny<string>()), Times.Once);
     }

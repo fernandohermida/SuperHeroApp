@@ -1,8 +1,8 @@
-﻿using SuperHeroApp.Application.Common.Interfaces;
-using SuperHeroApp.Application.Common.Models;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using SuperHeroApp.Application.Common.Interfaces;
+using SuperHeroApp.Application.Common.Models;
 
 namespace SuperHeroApp.Infrastructure.Identity;
 

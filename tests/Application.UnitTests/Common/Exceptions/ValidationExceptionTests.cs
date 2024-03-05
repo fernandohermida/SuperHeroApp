@@ -1,7 +1,7 @@
-﻿using SuperHeroApp.Application.Common.Exceptions;
-using FluentAssertions;
+﻿using FluentAssertions;
 using FluentValidation.Results;
 using NUnit.Framework;
+using SuperHeroApp.Application.Common.Exceptions;
 
 namespace SuperHeroApp.Application.UnitTests.Common.Exceptions;
 

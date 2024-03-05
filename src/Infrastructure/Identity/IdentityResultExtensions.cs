@@ -1,5 +1,5 @@
-﻿using SuperHeroApp.Application.Common.Models;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
+using SuperHeroApp.Application.Common.Models;
 
 namespace SuperHeroApp.Infrastructure.Identity;
 

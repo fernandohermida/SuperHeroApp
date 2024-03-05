@@ -1,7 +1,7 @@
-﻿using SuperHeroApp.Domain.Common;
-using MediatR;
+﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using SuperHeroApp.Domain.Common;
 
 namespace SuperHeroApp.Infrastructure.Data.Interceptors;
 

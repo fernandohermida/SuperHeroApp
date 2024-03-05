@@ -17,7 +17,7 @@ public class SuperHero : EndpointGroupBase
 
     public Task<List<SuperHeroDto>> GetFavorites(ISender sender)
     {
-        return  sender.Send(new GetFavoriteSuperheroesQuery());
+        return sender.Send(new GetFavoriteSuperheroesQuery());
     }
 
     public Task<int> AddFavorite(ISender sender, [AsParameters] AddFavoriteSuperheroCommand command)

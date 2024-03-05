@@ -29,7 +29,7 @@ public class GetFavoriteSuperheroesQueryHandler : IRequestHandler<GetFavoriteSup
            .ToListAsync(cancellationToken);
 
         var superHeros = await _superHeroService.GetSuperHeroesByIdsAsync(favorites);
-       
+
         return superHeros;
     }
 }

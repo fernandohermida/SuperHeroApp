@@ -1,8 +1,8 @@
 ﻿using System.Data.Common;
-using SuperHeroApp.Infrastructure.Data;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Respawn;
+using SuperHeroApp.Infrastructure.Data;
 using Testcontainers.MsSql;
 
 namespace SuperHeroApp.Application.FunctionalTests;
