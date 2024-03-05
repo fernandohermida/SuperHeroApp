@@ -564,7 +564,7 @@
             "type": "string",
             "nullable": true
           },
-          "alterEgos": {
+          "alter-egos": {
             "type": "string",
             "nullable": true
           },
@@ -675,7 +675,7 @@
             "type": "string",
             "nullable": true
           },
-          "resultsFor": {
+          "results-for": {
             "type": "string",
             "nullable": true
           },

@@ -5,6 +5,8 @@ namespace SuperHeroApp.Application.SuperHeroFeatures.Queries.SearchSuperHeroByNa
 public class SuperHeroResponse
 {
     public string? Response { get; set; }
+
+    [JsonPropertyName("results-for")]
     public string? ResultsFor { get; set; }
     public List<SuperHeroDto>? Results { get; set; }
 }
