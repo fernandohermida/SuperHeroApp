@@ -6,7 +6,7 @@ public class SuperHero
     public string? Name { get; set; }
     public Powerstats Powerstats { get; set; } = new Powerstats();
     public Biography Biography { get; set; } = new Biography();
-    public Appearance1 Appearance { get; set; } = new Appearance1();
+    public Appearance Appearance { get; set; } = new Appearance();
     public Work Work { get; set; } = new Work();
     public Connections Connections { get; set; } = new Connections();
     public Image Image { get; set; } = new Image();
@@ -33,7 +33,7 @@ public class Biography
     public string? Alignment { get; set; }
 }
 
-public class Appearance1
+public class Appearance
 {
     public string? Gender { get; set; }
     public string? Race { get; set; }

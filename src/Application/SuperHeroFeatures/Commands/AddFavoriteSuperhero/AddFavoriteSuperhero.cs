@@ -24,8 +24,6 @@ public class AddFavoriteSuperheroCommandHandler : IRequestHandler<AddFavoriteSup
             SuperheroId = request.SuperheroId,
         };
 
-        //Here should be implemented saving the superhero id details in local storage to furure use
-
         _context.Favorites.Add(entity);
 
         await _context.SaveChangesAsync(cancellationToken);

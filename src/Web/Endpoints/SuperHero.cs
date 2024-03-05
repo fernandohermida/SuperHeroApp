@@ -15,12 +15,12 @@ public class SuperHero : EndpointGroupBase
             .MapGet(SearchSuperHeroByName, "search");
     }
 
-    public Task<List<int>> GetFavorites(ISender sender)
+    public Task<List<SuperHeroDto>> GetFavorites(ISender sender)
     {
         return  sender.Send(new GetFavoriteSuperheroesQuery());
     }
 
-    public Task<int> AddFavorite(ISender sender, AddFavoriteSuperheroCommand command)
+    public Task<int> AddFavorite(ISender sender, [AsParameters] AddFavoriteSuperheroCommand command)
     {
         return sender.Send(command);
     }

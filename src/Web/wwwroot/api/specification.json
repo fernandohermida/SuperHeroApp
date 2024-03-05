@@ -20,8 +20,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "integer",
-                    "format": "int32"
+                    "$ref": "#/components/schemas/SuperHeroDto"
                   }
                 }
               }
@@ -39,18 +38,18 @@
           "SuperHero"
         ],
         "operationId": "AddFavorite",
-        "requestBody": {
-          "x-name": "command",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/AddFavoriteSuperheroCommand"
-              }
-            }
-          },
-          "required": true,
-          "x-position": 1
-        },
+        "parameters": [
+          {
+            "name": "SuperheroId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "x-position": 1
+          }
+        ],
         "responses": {
           "200": {
             "description": "",
@@ -495,37 +494,6 @@
   },
   "components": {
     "schemas": {
-      "AddFavoriteSuperheroCommand": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "superheroId": {
-            "type": "integer",
-            "format": "int32"
-          }
-        }
-      },
-      "SuperHeroResponse": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "response": {
-            "type": "string",
-            "nullable": true
-          },
-          "resultsFor": {
-            "type": "string",
-            "nullable": true
-          },
-          "results": {
-            "type": "array",
-            "nullable": true,
-            "items": {
-              "$ref": "#/components/schemas/SuperHeroDto"
-            }
-          }
-        }
-      },
       "SuperHeroDto": {
         "type": "object",
         "additionalProperties": false,
@@ -696,6 +664,27 @@
           "url": {
             "type": "string",
             "nullable": true
+          }
+        }
+      },
+      "SuperHeroResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "response": {
+            "type": "string",
+            "nullable": true
+          },
+          "resultsFor": {
+            "type": "string",
+            "nullable": true
+          },
+          "results": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/SuperHeroDto"
+            }
           }
         }
       },
