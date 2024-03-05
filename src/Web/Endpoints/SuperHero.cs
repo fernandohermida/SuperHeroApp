@@ -10,9 +10,9 @@ public class SuperHero : EndpointGroupBase
     {
         app.MapGroup(this)
             .RequireAuthorization()
-            .MapGet(GetFavorites)
-            .MapPost(AddFavorite)
-            .MapGet(SearchSuperHeroByName);
+            .MapGet(GetFavorites, "favorites")
+            .MapPost(AddFavorite, "favorites")
+            .MapGet(SearchSuperHeroByName, "search");
     }
 
     public Task<List<int>> GetFavorites(ISender sender)

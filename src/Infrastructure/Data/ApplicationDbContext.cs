@@ -13,7 +13,6 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>, IApplica
 
     public DbSet<FavoriteSuperhero> Favorites => Set<FavoriteSuperhero>();
 
-    public DbSet<SuperHero> Superheros => Set<SuperHero>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

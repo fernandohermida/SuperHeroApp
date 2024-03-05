@@ -6,7 +6,7 @@ public interface IApplicationDbContext
 {
     DbSet<FavoriteSuperhero> Favorites { get; }
 
-    DbSet<SuperHero> Superheros { get; }
+    //DbSet<SuperHero> Superheros { get; }
 
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }
