@@ -35,12 +35,14 @@ public class BiographyDTO
 {
     [JsonPropertyName("full-Name")]
     public string? FullName { get; set; }
-    [JsonPropertyName("alterEgos")]
+
+    [JsonPropertyName("alter-egos")]
     public string? AlterEgos { get; set; }
     public List<string>? Aliases { get; set; }
 
     [JsonPropertyName("place-of-birth")]
     public string? PlaceOfBirth { get; set; }
+
     [JsonPropertyName("first-appearance")]
     public string? FirstAppearance { get; set; }
     public string? Publisher { get; set; }

@@ -575,11 +575,11 @@
               "type": "string"
             }
           },
-          "placeOfBirth": {
+          "place-of-birth": {
             "type": "string",
             "nullable": true
           },
-          "firstAppearance": {
+          "first-appearance": {
             "type": "string",
             "nullable": true
           },
@@ -619,11 +619,11 @@
               "type": "string"
             }
           },
-          "eyeColor": {
+          "eye-color": {
             "type": "string",
             "nullable": true
           },
-          "hairColor": {
+          "hair-color": {
             "type": "string",
             "nullable": true
           }
@@ -647,7 +647,7 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "groupAffiliation": {
+          "group-affiliation": {
             "type": "string",
             "nullable": true
           },
